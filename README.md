@@ -1,7 +1,7 @@
 <div align="center">
 
 # Lista de Exercícios - Manipulação do DOM e Validação em JavaScript
-[![Teste Agora](https://i.imgur.com/NjMHH9O.png)](https://alicessena.github.io/landingPageLaslesVPN/)
+[![Teste Agora](https://i.imgur.com/NjMHH9O.png)](https://alicessena.github.io/Exercicios-JS-Dom-AliceSena/)
 
 </div>
 
@@ -108,7 +108,7 @@ Para rodar o projeto localmente e testar as funcionalidades:
 
 ### 1️ - Clone o repositório:
 ```bash
-git clone [link-do-seu-repositorio]
+git clone https://github.com/alicessena/Exercicios-JS-Dom-AliceSena
 cd Exercicios-JS-Dom-AliceSena
 ```
 
