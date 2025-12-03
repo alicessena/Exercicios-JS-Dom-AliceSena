@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 03 - Formulário e exibição de dados</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8 bg-gray-100 min-h-screen flex flex-col items-center">
+    <div class="bg-white p-8 rounded-lg shadow-xl w-full max-w-lg">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Cadastro de Usuário</h2>
+        
+        <form id="cadastroForm" class="space-y-4">
+            <div>
+                <label for="nome" class="block text-sm font-medium text-gray-700">Nome Completo</label>
+                <input type="text" id="nome" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" required>
+            </div>
+
+            <div>
+                <label for="dataNasc" class="block text-sm font-medium text-gray-700">Data de Nascimento</label>
+                <input type="date" id="dataNasc" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" required>
+            </div>
+
+            <div>
+                <label for="rua" class="block text-sm font-medium text-gray-700">Rua</label>
+                <input type="text" id="rua" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" required>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label for="numero" class="block text-sm font-medium text-gray-700">Número</label>
+                    <input type="number" id="numero" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" required>
+                </div>
+                <div>
+                    <label for="cidade" class="block text-sm font-medium text-gray-700">Cidade</label>
+                    <input type="text" id="cidade" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" required>
+                </div>
+            </div>
+            
+            <div>
+                <label for="uf" class="block text-sm font-medium text-gray-700">Estado (UF)</label>
+                <input type="text" id="uf" maxlength="2" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" required>
+            </div>
+
+            <button 
+                type="button" 
+                id="cadastrar" 
+                onclick="cadastrarUsuario()" 
+                class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500 transition duration-150 ease-in-out"
+            >
+                Cadastrar
+            </button>
+        </form>
+
+        <p id="resultado" class="mt-6 p-3 text-center border-t border-gray-200"></p>
+    </div>
+    
+    <script src="questao03.js"></script>
+</body>
+</html>
