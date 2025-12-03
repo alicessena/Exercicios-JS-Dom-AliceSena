@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 01 - Manipulação do DOM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-8 bg-gray-100 min-h-screen flex flex-col items-center">
+    <div class="bg-white p-6 rounded-lg shadow-xl w-full max-w-md">
+        <h1 id="titulo" class="text-center text-4xl font-bold mb-6 min-h-[40px]"></h1>
+
+        <div class="space-y-4">
+            <label for="txt-titulo" class="block text-sm font-medium text-gray-700">Digite o novo título:</label>
+            <input 
+                type="text" 
+                id="txt-titulo" 
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                placeholder="Ex: Meu Título Dinâmico"
+            >
+
+            <button 
+                onclick="inserirTitulo()" 
+                class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            >
+                Clique aqui
+            </button>
+        </div>
+    </div>
+    
+    <script src="questao01.js"></script>
+</body>
+</html>
